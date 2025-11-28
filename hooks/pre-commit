@@ -1,3 +1,0 @@
-#!/bin/sh
-
-git diff --diff-filter=d --cached --name-only -z | xargs --null -I % sh -c 'repolint "%" --repo'
